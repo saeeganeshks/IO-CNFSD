@@ -31,8 +31,9 @@ def new_task(task_var: Task):
     return "Task: {}, due on {}".format(ntask,due)
 
 
-@app.post("/deletetask")
+@app.post("/changetask")
 def del_task(task_var: Task):
     task_encoded = jsonable_encoder(task_var)
     ntask = task_encoded['task_name']
-    return "Task Removed"
+    due = task_encoded['due_date']
+    return "Task Changed"
