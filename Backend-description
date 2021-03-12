@@ -1,0 +1,7 @@
+The project is a Daily Task Management App. It is used to track daily tasks, create new tasks and change existing tasks.
+
+get("/") - Welcome page to daily task app
+get("/today") - shows the current date
+get("/tasks") - shows the current tasks to do
+post("/newtask") - create a new task
+post("/changetask") - to change an existing task
